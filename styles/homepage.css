@@ -26,9 +26,9 @@ body {
   gap: 40px;
 }
 
-.navbar__icons svg {
-  width: 30px;
-  height: 30px;
+.svg__image {
+  width: 60px;
+  height: 60px;
   padding: 4px;
   display: flex;
   align-items: center;
@@ -37,7 +37,71 @@ body {
   color: rgb(161, 167, 161);
 }
 
+.navbar__icons svg {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: rgb(113, 114, 113);
+}
+
 .navbar__icons svg:hover {
   background-color: rgb(8, 8, 8);
   border-radius: 10px;
+  color: aliceblue;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__head {
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 10px;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__head h1 {
+  color: rgb(161, 167, 161);
+  height: 50px;
+}
+
+.main__head__icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 50px;
+  margin: 0 100px;
+  margin-top: 10px;
+}
+
+.main__head__icons svg:hover {
+  border-radius: 10px;
+  color: rgb(235, 255, 255);
+}
+
+.main__grid__Section {
+  margin-top: 30px;
+  margin-left: 60px;
+  padding: 10px;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.grid__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
