@@ -39,4 +39,5 @@ body {
 
 .navbar__icons svg:hover {
   background-color: rgb(8, 8, 8);
+  border-radius: 10px;
 }
