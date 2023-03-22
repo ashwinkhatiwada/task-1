@@ -121,3 +121,42 @@ p {
   border-radius: 10px;
   color: rgb(235, 255, 255);
 }
+
+.add__item_form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.form__upload__image {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  height: 90px;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  display: flex;
+  color: rgb(22, 22, 22);
+  padding: 20px;
+  background-color: rgb(207, 205, 202);
+  border-radius: 100%;
+}
+
+.camera__icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  color: rgb(22, 22, 22);
+  padding: 13px;
+}
+
+.upload__file {
+  background-color: red;
+  width: 20%;
+  /* text */
+}
