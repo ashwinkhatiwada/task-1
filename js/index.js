@@ -26,8 +26,6 @@ layoutButton.forEach(function (button) {
 
 
 
-
-
 // Grid and List Layout
 var button_grid = document.getElementById("grid_layout");
 var button_list = document.getElementById("list_layout");

@@ -260,3 +260,51 @@ p {
   margin-top: -110%;
   color: rgb(219, 219, 219);
 }
+
+.main__list__section {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.list__items {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 600px;
+  /* width: 100%; */
+}
+
+.list__items ul {
+  list-style: none;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+
+.list__items ul li {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(21, 22, 22, 0.9);
+  align-items: center;
+}
+.list_image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
