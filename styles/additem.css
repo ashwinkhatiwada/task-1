@@ -240,3 +240,15 @@ select {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
+
+.checkbox {
+  margin-left: -10px;
+}
+
+.checkbox__options {
+  margin-top: -8%;
+  color: rgb(161, 167, 161);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
