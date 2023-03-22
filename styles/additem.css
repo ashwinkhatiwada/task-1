@@ -199,6 +199,26 @@ input {
   background-color: rgba(38, 39, 41, 0.9);
   border-radius: 5px;
   border-bottom: 1px solid rgb(14, 13, 13);
-  color: rgb(243, 226, 226);
+  color: rgb(161, 167, 161);
+  font-size: 1rem;
+}
+
+.select__options {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  gap: 10%;
+  width: 70%;
+}
+
+select {
+  border: none;
+  padding: 14px;
+  width: 94%;
+  background-color: rgba(38, 39, 41, 0.9);
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(14, 13, 13);
+  color: rgb(161, 167, 161);
   font-size: 1rem;
 }
