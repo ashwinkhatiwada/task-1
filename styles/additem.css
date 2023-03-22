@@ -131,7 +131,7 @@ p {
 .form__upload__image {
   display: flex;
   flex-direction: row;
-  gap: 20%;
+  gap: 7%;
   height: 90px;
   margin-top: 20px;
 }
@@ -156,7 +156,47 @@ p {
 }
 
 .upload__file {
-  background-color: red;
-  width: 20%;
-  /* text */
+  background-color: rgba(16, 17, 19, 0.9);
+  border: 5px;
+  width: 7%;
+  color: rgb(207, 205, 202);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.upload__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  color: rgb(243, 226, 226);
+}
+
+.form__data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+.form__text {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  gap: 15%;
+  width: 60%;
+}
+
+input {
+  border: none;
+  padding: 15px;
+  background-color: rgba(29, 30, 32, 0.9);
+  border-radius: 5px;
+  color: rgb(243, 226, 226);
 }
