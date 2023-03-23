@@ -1,5 +1,4 @@
-const dotenv = require('dotenv');
-dotenv.config();
+import accessKey from "./my_key.js"
 
 // navbar active
 const navbarButton = document.querySelectorAll('.svg__imagee');
