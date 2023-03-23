@@ -43,31 +43,11 @@ p {
 }
 
 .gallery__content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 10px;
-  grid-gap: 20px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.2s;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
 }
