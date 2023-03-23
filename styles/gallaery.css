@@ -77,3 +77,47 @@ body {
   border-radius: 10px;
   color: aliceblue;
 }
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__head {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.main__head h1 {
+  color: rgb(161, 167, 161);
+  height: 50px;
+  margin-top: 40px;
+  margin-left: -80px;
+}
+
+h3,
+h5,
+p {
+  color: rgb(161, 167, 161);
+  height: 50px;
+}
+
+.main__head__icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 30px;
+  margin: 0 100px;
+  margin-top: -10px;
+  color: rgb(161, 167, 161);
+  cursor: pointer;
+}
+
+.main__head__icons svg:hover {
+  border-radius: 10px;
+  color: rgb(235, 255, 255);
+}
