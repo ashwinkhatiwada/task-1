@@ -89,9 +89,6 @@ if (submitForm) {
         const startDate = submitForm.elements.startDate.value;
         const endDate = submitForm.elements.endDate.value;
 
-        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate }
-        localStorage.setItem('data', JSON.stringify(data));
-
         const modal = document.getElementById("modal");
         const homepage = document.getElementsByClassName("main__homepage");
         homepage[0].style.opacity = 0.3;
@@ -106,6 +103,8 @@ if (submitForm) {
                 if (e.target != modal) {
                     modal.style.display = "none";
                     uploadedImage.style.display = "none";
+                    const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate }
+                    localStorage.setItem('data', JSON.stringify(data));
                     submitForm.reset();
                     homepage[0].style.opacity = 1;
                 }
