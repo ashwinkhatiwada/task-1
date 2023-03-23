@@ -93,7 +93,10 @@ if (submitForm) {
         localStorage.setItem('data', JSON.stringify(data));
 
         const modal = document.getElementById("modal");
+        const homepage = document.getElementsByClassName("main__homepage");
+        homepage[0].style.opacity = 0.3;
         modal.style.display = "flex";
+
 
         const yesButton = document.getElementById('yes');
         const noButton = document.getElementById('no');
