@@ -95,11 +95,30 @@ if (submitForm) {
         const modal = document.getElementById("modal");
         modal.style.display = "flex";
 
+        const yesButton = document.getElementById('yes');
+        const noButton = document.getElementById('no');
+
+        if (yesButton) {
+            yesButton.addEventListener('click', function (e) {
+                if (e.target != modal) {
+                    modal.style.display = "none";
+                    uploadedImage.style.display = "none";
+                    submitForm.reset();
+                }
+            })
+        }
+
+        if (noButton) {
+            noButton.addEventListener('click', function (e) {
+                if (e.target != modal) {
+                    modal.style.display = "none";
+                }
+            })
+        }
+
         window.addEventListener('click', function (e) {
             if (e.target != modal) {
                 modal.style.display = "none";
-                submitForm.reset();
-                uploadedImage.style.display = "none";
             }
         });
     });
