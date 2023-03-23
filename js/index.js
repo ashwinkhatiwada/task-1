@@ -1,14 +1,21 @@
 // navbar active
 const navbarButton = document.querySelectorAll('.svg__imagee');
 
-navbarButton.forEach(function (button) {
-    button.addEventListener('click', function (e) {
-        navbarButton.forEach(function (button) {
-            button.classList.remove('navbar__icons-svg-active');
-        });
-        e.target.classList.add('navbar__icons-svg-active');
-    });
-});
+if (window.location.pathname === '/index.html') {
+    navbarButton[0].classList.add('navbar__icons-svg-active')
+};
+
+if (window.location.pathname === '/add-item.html') {
+    navbarButton[1].classList.add('navbar__icons-svg-active')
+};
+
+if (window.location.pathname === '/gallary.html') {
+    navbarButton[2].classList.add('navbar__icons-svg-active')
+};
+
+if (window.location.pathname === '/bookmark.html') {
+    navbarButton[3].classList.add('navbar__icons-svg-active')
+};
 
 
 // layout icons active
