@@ -1,5 +1,3 @@
-import accessKey from "./my_key.js"
-
 // navbar active
 const navbarButton = document.querySelectorAll('.svg__imagee');
 
@@ -32,7 +30,6 @@ layoutButton.forEach(function (button) {
         e.target.classList.add('svg__image-active');
     });
 });
-
 
 
 // Grid and List Layout
