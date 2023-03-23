@@ -107,6 +107,7 @@ if (submitForm) {
                     modal.style.display = "none";
                     uploadedImage.style.display = "none";
                     submitForm.reset();
+                    homepage[0].style.opacity = 1;
                 }
             })
         }
@@ -115,6 +116,7 @@ if (submitForm) {
             noButton.addEventListener('click', function (e) {
                 if (e.target != modal) {
                     modal.style.display = "none";
+                    homepage[0].style.opacity = 1;
                 }
             })
         }
@@ -122,6 +124,7 @@ if (submitForm) {
         window.addEventListener('click', function (e) {
             if (e.target != modal) {
                 modal.style.display = "none";
+                homepage[0].style.opacity = 1;
             }
         });
     });
