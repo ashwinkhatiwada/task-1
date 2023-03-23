@@ -71,7 +71,10 @@ if (submitForm) {
         const startDate = submitForm.elements.startDate.value;
         const endDate = submitForm.elements.endDate.value;
 
-        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate }
+        const formData = new FormData(submitForm);
+        const filename = formData.get('photo').name;
+
+        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate, filename }
         localStorage.setItem('data', JSON.stringify(data));
 
         const modal = document.getElementById("modal");
