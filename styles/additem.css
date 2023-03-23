@@ -271,4 +271,5 @@ select {
   border-radius: 10px;
   color: rgb(161, 167, 161);
   font-size: 1rem;
+  cursor: pointer;
 }
