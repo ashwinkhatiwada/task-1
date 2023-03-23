@@ -156,9 +156,8 @@ p {
 }
 
 .upload__file {
-  background-color: rgba(16, 17, 19, 0.9);
   border: 5px;
-  width: 7%;
+  height: 50px;
   color: rgb(207, 205, 202);
   text-align: center;
   display: flex;
@@ -166,7 +165,7 @@ p {
   justify-content: space-around;
   gap: 10px;
   padding: 20px;
-  margin: 15px;
+  margin: 5px;
   border-radius: 10px;
 }
 
