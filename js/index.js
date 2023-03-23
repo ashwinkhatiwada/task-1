@@ -30,15 +30,29 @@ layoutButton.forEach(function (button) {
 var button_grid = document.getElementById("grid_layout");
 var button_list = document.getElementById("list_layout");
 
-var grid_class = document.getElementsByClassName('main__grid__Section');
-var list_class = document.getElementsByClassName('main__list__section');
+if (button_grid || button_list) {
+    var grid_class = document.getElementsByClassName('main__grid__Section');
+    var list_class = document.getElementsByClassName('main__list__section');
 
-button_grid.addEventListener("click", function () {
-    grid_class[0].style.display = "block";
-    list_class[0].style.display = "none";
-});
+    button_grid.addEventListener("click", function () {
+        grid_class[0].style.display = "block";
+        list_class[0].style.display = "none";
+    });
 
-button_list.addEventListener("click", function () {
-    grid_class[0].style.display = "none";
-    list_class[0].style.display = "block";
-})  
+    button_list.addEventListener("click", function () {
+        grid_class[0].style.display = "none";
+        list_class[0].style.display = "block";
+    })
+}
+
+// previous tab
+var backButton = document.getElementById('prevTab');
+
+if (backButton) {
+    backButton.addEventListener('click', function () {
+        window.history.back();
+    })
+}
+
+
+
