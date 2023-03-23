@@ -71,6 +71,16 @@ if (submitForm) {
 
         const data = { name, destination, race, season, budget, whoAreYou }
         localStorage.setItem('data', JSON.stringify(data));
+
+        const modal = document.getElementById("modal");
+        modal.style.display = "flex";
+
+        window.addEventListener('click', function (e) {
+            if (e.target != modal) {
+                modal.style.display = "none";
+                submitForm.reset();
+            }
+        });
     });
 }
 
