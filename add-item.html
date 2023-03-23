@@ -78,7 +78,7 @@
 
             <!-- FORM SECTION -->
 
-            <form class="add__item_form">
+            <form class="add__item_form" id="submit-form">
                 <div class="form__upload__image">
                     <div class="circle">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
@@ -103,28 +103,28 @@
 
                 <div class="form__data">
                     <div class="form__text">
-                        <input type="text" placeholder="Enter your name" required />
-                        <input type="text" placeholder="Your Destination Name" required />
+                        <input type="text" placeholder="Enter your name" name="name" required />
+                        <input type="text" placeholder="Your Destination Name" name="dest" required />
                     </div>
 
                     <div class="select__options">
                         <div class="select__option">
-                            <select name="select__option" id="select__option">
-                                <option value="0">choose your preffered Season</option>
-                                <option value="1">Winter</option>
-                                <option value="2">Summer</option>
-                                <option value="3">Spring</option>
-                                <option value="4">Autumn</option>
+                            <select name="season" id="select__option">
+                                <option>choose your preffered Season</option>
+                                <option value="winter">Winter</option>
+                                <option value="summer">Summer</option>
+                                <option value="spring">Spring</option>
+                                <option value="autumn">Autumn</option>
                             </select>
                         </div>
 
                         <div class="select__option">
-                            <select name="select__option" id="select__option">
-                                <option value="0">choose your preffered Budget</option>
-                                <option value="1">10k</option>
-                                <option value="2">20k</option>
-                                <option value="3">30k</option>
-                                <option value="4">50k</option>
+                            <select name="budget" id="select__option">
+                                <option>choose your preffered Budget</option>
+                                <option value="10k">10k</option>
+                                <option value="20k">20k</option>
+                                <option value="30k">30k</option>
+                                <option value="40k">50k</option>
                             </select>
                         </div>
                     </div>
@@ -134,32 +134,32 @@
                             <h3>What identifies you the best?</h3>
                             <div class="radio__buttons">
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="asian" />
                                     <label for="radio__button">Asian</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="hispanic" />
                                     <label for="radio__button">Hispanic</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="african" />
                                     <label for="radio__button">African</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="european" />
                                     <label for="radio__button">European</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="latina" />
                                     <label for="radio__button">Latin American</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="radio__button" id="radio__button" />
+                                    <input type="radio" name="race" id="radio__button" value="other" />
                                     <label for="radio__button">Other</label>
                                 </div>
                             </div>
@@ -170,32 +170,32 @@
 
                             <div class="checkbox__options">
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="student" />
                                     <label for="checkbox__option">Student</label>
                                 </div>
 
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="teacher" />
                                     <label for="checkbox__option">Teacher</label>
                                 </div>
 
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="businessman" />
                                     <label for="checkbox__option">Business owner</label>
                                 </div>
 
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="freelancer" />
                                     <label for="checkbox__option">Freelancer</label>
                                 </div>
 
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="traveller" />
                                     <label for="checkbox__option">Traveller</label>
                                 </div>
 
                                 <div class="checkbox__option">
-                                    <input type="checkbox" name="checkbox__option" id="checkbox__option" />
+                                    <input type="checkbox" name="way" id="checkbox__option" value="tourist" />
                                     <label for="checkbox__option">Tourist</label>
                                 </div>
 
@@ -215,5 +215,3 @@
 </body>
 
 </html>
-
-<!--  -->

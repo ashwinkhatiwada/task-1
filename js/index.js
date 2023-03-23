@@ -54,6 +54,24 @@ if (backButton) {
     })
 }
 
+// submit form
+const submitForm = document.getElementById('submit-form');
 
+if (submitForm) {
+
+    submitForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = submitForm.elements.name.value;
+        const destination = submitForm.elements.dest.value;
+        const race = submitForm.elements.race.value;
+        const season = submitForm.elements.season.value;
+        const budget = submitForm.elements.budget.value;
+        const whoAreYou = Array.from(submitForm.elements.way).filter((item) => item.checked).map((item) => item.value);
+
+        const data = { name, destination, race, season, budget, whoAreYou }
+        localStorage.setItem('data', JSON.stringify(data));
+    });
+}
 
 
