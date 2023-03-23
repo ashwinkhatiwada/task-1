@@ -1,3 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
 // navbar active
 const navbarButton = document.querySelectorAll('.svg__imagee');
 
