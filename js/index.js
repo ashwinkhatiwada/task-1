@@ -54,6 +54,25 @@ if (backButton) {
     })
 }
 
+
+// image upload
+const imageInput = document.getElementById('image');
+const uploadedImage = document.getElementById('uploaded-image');
+const cameraIcon = document.getElementsByClassName('camera__icon')
+
+imageInput.addEventListener('change', function () {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.addEventListener('load', function () {
+            uploadedImage.setAttribute('src', this.result);
+            uploadedImage.style.display = "block";
+
+        });
+        reader.readAsDataURL(file);
+    }
+});
+
 // submit form
 const submitForm = document.getElementById('submit-form');
 
@@ -61,7 +80,6 @@ if (submitForm) {
 
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
-
         const name = submitForm.elements.name.value;
         const destination = submitForm.elements.dest.value;
         const race = submitForm.elements.race.value;
@@ -71,10 +89,7 @@ if (submitForm) {
         const startDate = submitForm.elements.startDate.value;
         const endDate = submitForm.elements.endDate.value;
 
-        const formData = new FormData(submitForm);
-        const filename = formData.get('photo').name;
-
-        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate, filename }
+        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate }
         localStorage.setItem('data', JSON.stringify(data));
 
         const modal = document.getElementById("modal");
@@ -84,9 +99,12 @@ if (submitForm) {
             if (e.target != modal) {
                 modal.style.display = "none";
                 submitForm.reset();
+                uploadedImage.style.display = "none";
             }
         });
     });
 }
+
+
 
 
