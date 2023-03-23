@@ -83,24 +83,28 @@ imageInput.addEventListener('change', function () {
 // submit form
 const submitForm = document.getElementById('submit-form');
 
+
+
 if (submitForm) {
 
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
-        const name = submitForm.elements.name.value;
-        const destination = submitForm.elements.dest.value;
-        const race = submitForm.elements.race.value;
-        const season = submitForm.elements.season.value;
-        const budget = submitForm.elements.budget.value;
-        const whoAreYou = Array.from(submitForm.elements.way).filter((item) => item.checked).map((item) => item.value);
-        const startDate = submitForm.elements.startDate.value;
-        const endDate = submitForm.elements.endDate.value;
+
+        const formData = submitForm.elements;
+
+        const name = formData.name.value;
+        const destination = formData.dest.value;
+        const race = formData.race.value;
+        const season = formData.season.value;
+        const budget = formData.budget.value;
+        const startDate = formData.startDate.value;
+        const endDate = formData.endDate.value;
+        const whoAreYou = Array.from(formData.way).filter((item) => item.checked).map((item) => item.value);
 
         const modal = document.getElementById("modal");
         const homepage = document.getElementsByClassName("main__homepage");
         homepage[0].style.opacity = 0.3;
         modal.style.display = "flex";
-
 
         const yesButton = document.getElementById('yes');
         const noButton = document.getElementById('no');
