@@ -68,8 +68,10 @@ if (submitForm) {
         const season = submitForm.elements.season.value;
         const budget = submitForm.elements.budget.value;
         const whoAreYou = Array.from(submitForm.elements.way).filter((item) => item.checked).map((item) => item.value);
+        const startDate = submitForm.elements.startDate.value;
+        const endDate = submitForm.elements.endDate.value;
 
-        const data = { name, destination, race, season, budget, whoAreYou }
+        const data = { name, destination, race, season, budget, whoAreYou, startDate, endDate }
         localStorage.setItem('data', JSON.stringify(data));
 
         const modal = document.getElementById("modal");

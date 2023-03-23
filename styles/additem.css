@@ -293,3 +293,17 @@ select {
   color: white;
   font-size: 2rem;
 }
+
+.select__date {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 70%;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  margin-top: -3%;
+}

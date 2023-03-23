@@ -134,32 +134,32 @@
                             <h3>What identifies you the best?</h3>
                             <div class="radio__buttons">
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="asian" />
+                                    <input type="radio" name="race" id="radio__button" value="asian" required />
                                     <label for="radio__button">Asian</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="hispanic" />
+                                    <input type="radio" name="race" id="radio__button" value="hispanic" required />
                                     <label for="radio__button">Hispanic</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="african" />
+                                    <input type="radio" name="race" id="radio__button" value="african" required />
                                     <label for="radio__button">African</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="european" />
+                                    <input type="radio" name="race" id="radio__button" value="european" required />
                                     <label for="radio__button">European</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="latina" />
+                                    <input type="radio" name="race" id="radio__button" value="latina" required />
                                     <label for="radio__button">Latin American</label>
                                 </div>
 
                                 <div class="radio__button">
-                                    <input type="radio" name="race" id="radio__button" value="other" />
+                                    <input type="radio" name="race" id="radio__button" value="other" required />
                                     <label for="radio__button">Other</label>
                                 </div>
                             </div>
@@ -202,14 +202,25 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
+                    <div class="select__date">
+
+                        <h3>When do you plan to travel?</h3>
+                        <div class="date">
+                            <input type="date" name="startDate" id="travel_date" required />
+                            <input type="date" name="endDate" id="travel_date" required />
+                        </div>
+
+                    </div>
+                </div>
                 <div class="button">
                     <button type="submit" class="btn">Submit</button>
                 </div>
-            </form>
         </div>
+        </form>
     </div>
+    </div>
+
     <div id="modal">
         <div id="modal-content">
             <p>Form submitted successfully!</p>
