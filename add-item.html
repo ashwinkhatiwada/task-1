@@ -2,16 +2,234 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/additem.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/additem.css" />
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+
     <title>Document</title>
 </head>
 
 <body>
+    <div class="main__homepage">
+        <!-- NAVBAR SECTION START -->
+        <nav class="navbar__head">
+            <div class="navbar__icons">
+                <ul>
+                    <li>
+                        <a href="index.html" class="is_active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                                class="svg__imagee">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="additem.html" class="is_active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                                class="svg__imagee">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallary.html" class="is__active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                                class="svg__imagee">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bookmarks.html" class="is_active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                                class="svg__imagee">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVBAR SECTION END -->
+
+        <!-- MAIN SECTION START -->
+        <div class="main__content">
+            <!-- HEAD SECTION -->
+            <div class="main__head">
+                <div class="main__head__icons">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" id="prevTab">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                    </svg>
+                </div>
+                <h1>Add</h1>
+            </div>
+
+            <!-- FORM SECTION -->
+
+            <form class="add__item_form" id="submit-form">
+                <div class="form__upload__image">
+                    <div class="circle">
+
+                        <img id="uploaded-image" src="#" alt="Uploaded Image" style="display: none;" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.5" stroke="currentColor"
+                            class="camera__icon" style="display:block">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                        </svg>
+                    </div>
+                    <div class="upload__file">
+                        <input type="file" name="photo" id="image" accept="image/*">
+
+                    </div>
+                </div>
+
+                <div class="form__data">
+                    <div class="form__text">
+                        <input type="text" placeholder="Enter your name" name="name" required />
+                        <input type="text" placeholder="Your Destination Name" name="dest" required />
+                    </div>
+
+                    <div class="select__options">
+                        <div class="select__option">
+                            <select name="season" id="select__option">
+                                <option>choose your preffered Season</option>
+                                <option value="winter">Winter</option>
+                                <option value="summer">Summer</option>
+                                <option value="spring">Spring</option>
+                                <option value="autumn">Autumn</option>
+                            </select>
+                        </div>
+
+                        <div class="select__option">
+                            <select name="budget" id="select__option">
+                                <option>choose your preffered Budget</option>
+                                <option value="10k">10k</option>
+                                <option value="20k">20k</option>
+                                <option value="30k">30k</option>
+                                <option value="40k">50k</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="other__buttons">
+                        <div class="radio">
+                            <h3>What identifies you the best?</h3>
+                            <div class="radio__buttons">
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button1" value="asian" required />
+                                    <label for="radio__button1">Asian</label>
+                                </div>
+
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button2" value="hispanic" required />
+                                    <label for="radio__button2">Hispanic</label>
+                                </div>
+
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button3" value="african" required />
+                                    <label for="radio__button3">African</label>
+                                </div>
+
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button4" value="european" required />
+                                    <label for="radio__button4">European</label>
+                                </div>
+
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button5" value="latina" required />
+                                    <label for="radio__button5">Latin American</label>
+                                </div>
+
+                                <div class="radio__button">
+                                    <input type="radio" name="race" id="radio__button6" value="other" required />
+                                    <label for="radio__button6">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <h3>Choose everything that applies.</h3>
+
+                            <div class="checkbox__options">
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option1" value="student" />
+                                    <label for="checkbox__option1">Student</label>
+                                </div>
+
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option2" value="teacher" />
+                                    <label for="checkbox__option2">Teacher</label>
+                                </div>
+
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option3" value="businessman" />
+                                    <label for="checkbox__option3">Business owner</label>
+                                </div>
+
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option4" value="freelancer" />
+                                    <label for="checkbox__option4">Freelancer</label>
+                                </div>
+
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option5" value="traveller" />
+                                    <label for="checkbox__option5">Traveller</label>
+                                </div>
+
+                                <div class="checkbox__option">
+                                    <input type="checkbox" name="way" id="checkbox__option6" value="tourist" />
+                                    <label for="checkbox__option6">Tourist</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select__date">
+
+                        <h3>When do you plan to travel?</h3>
+                        <div class="date">
+                            <input type="date" name="startDate" id="travel_date1" required />
+                            <input type="date" name="endDate" id="travel_date2" required />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+
+    <div id="modal">
+        <div id="modal-content">
+            <div class="message">
+                <p>Do you agree to submit form?</p>
+            </div>
+            <div class="buttons">
+                <button id="yes">Yes</button>
+                <button id="no">No</button>
+            </div>
+        </div>
+
+
+        <script src="./js/index.js"></script>
 </body>
 
 </html>
